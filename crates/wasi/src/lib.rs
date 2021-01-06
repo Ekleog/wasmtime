@@ -26,8 +26,6 @@ necessary. Additionally [`Wasi::get_export`] can be used to do name-based
 resolution.",
         }
     },
-    // Error to return when caller module is missing memory export:
-    missing_memory: { wasi_common::wasi::types::Errno::Inval },
 });
 
 pub fn is_wasi_module(name: &str) -> bool {
